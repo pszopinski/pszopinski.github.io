@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <header class="segment">
+    <div class="segment-content">
+      {% include header.html %}
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="segment">
+    <div class="segment-content">
+      {% include footer.html %}
+    </div>
+  </footer>
+</body>
+
+</html>

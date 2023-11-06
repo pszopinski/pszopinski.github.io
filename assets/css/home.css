@@ -1,0 +1,10 @@
+.introduction {
+  min-height: 40vh;
+  display: flex;
+
+  background-color: var(--yellow);
+}
+
+.introduction .segment-content {
+  max-width: calc(var(--max-width) * 0.8);
+}
