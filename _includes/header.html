@@ -1,12 +1,27 @@
-Logo goes here.
-<nav>
+<a href="/" title="Home" class="logo">
+  <svg viewBox="0 0 70 100">
+    <use href="assets/images/symbols.svg#logo" />
+  </svg>
+</a>
+
+<div class="social-media-links">
+  <a href="https://www.linkedin.com/in/pawe%C5%82-szopi%C5%84ski-1a6709160/" target="_blank" title="LinkedIn"
+    class="icon">
+    <i class="bi-linkedin"></i>
+  </a>
+  <a href="https://github.com/pszopinski/" target="_blank" title="GitHub" class="icon">
+    <i class="bi-github"></i>
+  </a>
+</div>
+
+<nav class="main-nav">
   <ul>
     {% for item in site.data.navigation %}
-      <li>
-        <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>
-          {{ item.name }}
-        </a>
-      </li>
+    <li>
+      <a href="{{ item.link }}" {% if page.url==item.link %} class="current" {% endif %}>
+        {{ item.name }}
+      </a>
+    </li>
     {% endfor %}
   </ul>
 </nav>
