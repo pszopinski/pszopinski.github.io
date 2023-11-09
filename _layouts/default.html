@@ -4,21 +4,13 @@
 {% include head.html %}
 
 <body>
-  <header class="segment">
-    <div class="segment-content">
-      {% include header.html %}
-    </div>
-  </header>
+  {% include header.html %}
 
   <main>
     {{ content }}
   </main>
 
-  <footer class="segment">
-    <div class="segment-content">
-      {% include footer.html %}
-    </div>
-  </footer>
+  {% include footer.html %}
 </body>
 
 </html>
