@@ -1,5 +1,33 @@
-<footer class="segment">
+<footer class="footer segment">
   <div class="segment-content">
-    <p>This is a footer.</p>
+
+    <div class="flex-container">
+      <div class="portrait-circle"></div>
+
+      <div class="contact-info">
+        <p class="bold">Contact</p>
+        <p>
+          Feel free to reach out to me via email at
+          <strong>contact</strong> at <strong>pawelszopinski.com</strong>.
+        </p>
+      </div>
+
+      <div class="social-media-links">
+        <p class="bold">Find me on</p>
+        <ul>
+          {% for item in site.data.social_media %}
+            <li>
+              <a href="{{ item.url }}" target="_blank" class="bi bi-{{ item.bootstrap_icon }}">{{ item.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <p class="under-the-hood">
+      <span class="bi bi-hammer">Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</span><br>
+      <span class="bi bi-cloud">Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</span>
+    </p>
+
   </div>
 </footer>

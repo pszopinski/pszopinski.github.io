@@ -3,7 +3,10 @@
   display: flex;
 
   background-color: var(--yellow);
-  --shadow-opacity: 1;
+}
+
+#introduction a {
+  text-decoration-color: currentColor;
 }
 
 #introduction .segment-content {
