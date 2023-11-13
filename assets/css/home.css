@@ -1,14 +1,46 @@
 #introduction {
-  min-height: 60vh;
+  min-height: 50vh;
   display: flex;
 
-  background-color: var(--yellow);
+  background-color: var(--accent-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  #introduction {
+    background-color: var(--footer-bg-color);
+  }
 }
 
 #introduction a {
-  text-decoration-color: currentColor;
+  --underline-color: currentColor;
 }
 
 #introduction .segment-content {
   max-width: calc(var(--max-width) * 0.8);
+}
+
+#introduction .first-row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: var(--medium-gap);
+  margin-bottom: var(--medium-gap);
+}
+
+#introduction .main-text {
+  flex: 3 20rem;
+}
+
+#introduction .portrait-circle {
+  flex: 1 15rem;
+  max-width: 20rem;
+  transform: scaleX(-1);
+}
+
+#introduction .second-row {
+  flex: 100%;
+  display: flex;
+  justify-content: center;
+  gap: var(--medium-gap);
 }
