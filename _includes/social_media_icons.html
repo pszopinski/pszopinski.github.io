@@ -1,0 +1,7 @@
+<div class="social-media-icons">
+  {% for item in site.data.social_media %}
+    <a href="{{ item.url }}" target="_blank" title="{{ item.name }}">
+      <span class="bi bi-{{ item.bootstrap_icon }}"></span>
+    </a>
+  {% endfor %}
+</div>

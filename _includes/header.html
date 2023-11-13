@@ -7,13 +7,13 @@
       </svg>
     </a>
 
-    <div class="social-media-icons">
-      {% for item in site.data.social_media %}
-        <a href="{{ item.url }}" target="_blank" title="{{ item.name }}">
-          <span class="bi bi-{{ item.bootstrap_icon }}"></span>
-        </a>
-      {% endfor %}
-    </div>
+    <button title="Menu" id="open-mobile-menu">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <button title="Close" id="close-mobile-menu">
+      <i class="bi bi-x-lg"></i>
+    </button>
 
     <nav class="main-nav">
       <ul>
@@ -27,13 +27,7 @@
       </ul>
     </nav>
 
-    <button title="Menu" id="open-mobile-menu">
-      <i class="bi bi-list"></i>
-    </button>
-
-    <button title="Close" id="close-mobile-menu">
-      <i class="bi bi-x-lg"></i>
-    </button>
+    {% include social_media_icons.html %}
 
   </div>
 </header>
