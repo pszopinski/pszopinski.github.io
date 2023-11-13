@@ -58,12 +58,12 @@ h2 {
 
 h1 {
   font-size: 3em;
-  margin: 0 0 var(--medium-gap);
+  margin: var(--medium-gap) 0;
 }
 
 h2 {
   font-size: 2em;
-  margin: 0 0 var(--medium-gap);
+  margin: var(--medium-gap) 0;
 }
 
 a {
@@ -72,6 +72,17 @@ a {
   text-decoration-line: underline;
   text-decoration-color: var(--underline-color);
   text-decoration-thickness: 0.1em;
+}
+
+button.unstyled {
+  display: inline;
+  text-align: inherit;
+  line-height: inherit;
+  color: inherit;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .bold {
@@ -158,14 +169,6 @@ a {
   font-weight: bold;
 }
 
-.header button {
-  color: inherit;
-  padding: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
 #open-mobile-menu,
 #close-mobile-menu {
   display: none;
@@ -247,7 +250,7 @@ a {
   list-style: none;
 }
 
-.footer .flex-container {
+.footer .first-row {
   display: flex;
   gap: var(--medium-gap);
   margin-bottom: var(--medium-gap);
@@ -259,28 +262,27 @@ a {
 }
 
 .footer .contact-info {
-  flex: 4;
+  flex: 2;
 }
 
 .footer .social-media-links {
-  flex: 2;
+  flex: 1;
   white-space: nowrap;
 }
 
-.footer .under-the-hood {
-  text-align: center;
+.footer .second-row {
+  display: flex;
+  justify-content: center;
+  column-gap: var(--medium-gap);
 }
 
 @media (width <= 440px) {
-  .footer .flex-container {
+  .footer .first-row,
+  .footer .second-row {
     flex-direction: column;
   }
 
   .footer .portrait-circle {
     display: none;
-  }
-
-  .footer .under-the-hood {
-    text-align: revert;
   }
 }
