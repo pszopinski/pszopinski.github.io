@@ -1,0 +1,14 @@
+.big {
+  font-size: 1.2em;
+}
+
+figure {
+  max-width: 350px;
+}
+
+@media (width >= 800px) {
+  figure {
+    float: right;
+    margin-left: var(--medium-gap);
+  }
+}

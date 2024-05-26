@@ -7,7 +7,7 @@
 
 @media (prefers-color-scheme: dark) {
   #introduction {
-    background-color: var(--footer-bg-color);
+    background-color: color-mix(in srgb, var(--bg-color), black 25%);
   }
 }
 
