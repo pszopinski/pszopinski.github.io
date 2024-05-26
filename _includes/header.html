@@ -1,6 +1,5 @@
 <header class="header segment">
   <div class="segment-content flex-container">
-
     <a href="/" title="Home" class="logo">
       <svg viewBox="0 0 70 100">
         <use href="assets/images/symbols.svg#logo" />
@@ -19,7 +18,7 @@
       <ul>
         {% for item in site.data.navigation %}
         <li>
-          <a href="{{ item.link }}" {% if page.url==item.link %} class="current" {% endif %}>
+          <a href="{{ item.link }}" {% if item.external %} target="_blank" {% endif %} {% if page.url==item.link %} class="current" {% endif %}>
             {{ item.name }}
           </a>
         </li>
@@ -28,7 +27,6 @@
     </nav>
 
     {% include social_media_icons.html %}
-
   </div>
 </header>
 

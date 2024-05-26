@@ -6,3 +6,6 @@
   link: /portfolio.html
 - name: About
   link: /about.html
+- name: CV
+  link: https://pszopinski.github.io/cv
+  external: true
